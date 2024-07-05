@@ -14,7 +14,6 @@
 // Execute `rustlings hint hashmaps2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
 
 use std::collections::HashMap;
 
@@ -43,8 +42,7 @@ fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
         if !basket.contains_key(&fruit) {
             basket.insert(fruit, 1);
         } else {
-            basket.
-            basket.insert(fruit, 1);
+            let mut aa = basket.get_mut(&fruit).unwrap();
         }
     }
 }
